@@ -1,0 +1,13 @@
+{
+  "name": "imgAreaSelect",
+  "version": "0.9.11-rc.1",
+  "description": "jQuery plugin allowing graphical selections over images",
+  "homepage": "http://odyniec.net/projects/imgareaselect/",
+  "author": "Michal Wojciechowski",
+  "license": "MIT",
+  "main": "jquery.imgareaselect.dev.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thg1101/imgareaselect.git"
+  }
+}
