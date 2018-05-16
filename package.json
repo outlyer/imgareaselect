@@ -1,6 +1,6 @@
 {
   "name": "imgAreaSelect",
-  "version": "0.9.11-rc.1",
+  "version": "0.9.12",
   "description": "jQuery plugin allowing graphical selections over images",
   "homepage": "http://odyniec.net/projects/imgareaselect/",
   "author": "Michal Wojciechowski",
@@ -8,6 +8,20 @@
   "main": "jquery.imgareaselect.dev.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:thg1101/imgareaselect.git"
+    "url": "git@github.com:outlyer/imgareaselect.git"
+  },
+  "scripts": {
+    "build-js": "mkdir -p dist; npx uglifyjs jquery.imgareaselect.dev.js -o dist/jquery.imgareaselect.min.js",
+    "build-css": "mkdir -p dist; npx node-sass scss/ --output-style compressed --output dist/",
+    "copy-images": "cp images/* dist/",
+    "build": "npm run -s build-js; npm run -s build-css; npm run -s copy-images"
+  },
+  "dependencies": {
+    "jquery": ">=3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "uglify-js": "^3.3.25",
+    "node-sass": "^4.9.0"
   }
 }

@@ -1,12 +1,15 @@
-ImgAreaSelect
-======================================
+# ImgAreaSelect
 
-The point of this fork is to add a package.json so as to enable npm installation
+This fork adds:
+* NPM support
+* Removed depreciated code to support jQuery 3.x
+* Allow for floating point values from jQuery's `width()` and `height()` return types
+* Minor changes to `.gitignore`
+* Removed outdated unit tests
+* Removed Makefile and replaced with `package.json` scripts
+* Replaced non-animated GIF with equally small PNG files
 
-ImgAreaSelect is a jQuery plugin for selecting a rectangular area of an image. It allows web developers to easily implement image cropping functionality, as well as other user interface features, such as photo notes (like those on Flickr).
+ImgAreaSelect is a jQuery plugin for selecting a rectangular area of an image. It allows web developers to easily implement image cropping functionality. 
 
-### Official website
-http://odyniec.net/projects/imgareaselect/
-
-### Official git
-https://github.com/odyniec/imgareaselect
+- [Official website](http://odyniec.net/projects/imgareaselect/)
+- [Official git](https://github.com/odyniec/imgareaselect)
